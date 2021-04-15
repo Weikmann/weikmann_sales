@@ -4,11 +4,13 @@ public class Customer {
 
 	private int customerID;
 	private String firstName;
+	private double credit;
 	
-	public Customer(int customerID, String firstName) {
-		super();
-		this.customerID = customerID;
-		this.firstName = firstName;
+
+	public Customer(int customerID, String firstName, double credit) {
+		setCustomerID(customerID);
+		setFirstName(firstName);
+		setCredit(credit);
 	}
 	
 	
@@ -25,4 +27,13 @@ public class Customer {
 		this.firstName = firstName;
 	}
 	
+	public double getCredit() {
+		return credit;
+	}
+
+
+	public void setCredit(double credit) {
+		this.credit = credit;
+	}
+
 }
